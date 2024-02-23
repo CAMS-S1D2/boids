@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1034933829933851243}
   - component: {fileID: 7561901167025423695}
   - component: {fileID: 2236928941250690101}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Face
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 8011276635846578174}
   - component: {fileID: 4054346765732343043}
   - component: {fileID: 5535248143534447132}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BoidV2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   layer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   rb: {fileID: 5535248143534447132}
 --- !u!65 &4054346765732343043
 BoxCollider:
@@ -186,7 +186,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4308843329111450751}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 1.05
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -203,7 +203,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 32
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!1 &8396505206759755558
 GameObject:
@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 7331878145495202034}
   - component: {fileID: 2979774244246097169}
   - component: {fileID: 6774047905976964340}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}

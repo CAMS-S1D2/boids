@@ -222,11 +222,12 @@ public class Boid : MonoBehaviour
     public void AutoJump(){
         var ray = new Ray(this.transform.position, this.transform.forward);
         RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 1, layer)){
+        if (Physics.Raycast(ray, out hit, 3, layer)){
             Debug.Log(hit.point);
-            rb.AddForce(Vector3.up * 1000f);
-            new WaitForSeconds(.20f);
-            rb.AddForce(new Vector3(0,0,1000f));
+            rb.AddForce(Vector3.up * 10f);
+            new WaitForSeconds(.50f);
+            //rb.AddForce(new Vector3(0,0,5f));
+            new WaitForSeconds(.50f);
         }
     }
 
@@ -337,6 +338,7 @@ public class Boid : MonoBehaviour
         UpdatePosition();
         UpdateRotation();
         DrawDebugView();
+        AutoJump();
     }
 
     public void ToggleDebugView()

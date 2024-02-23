@@ -112,7 +112,7 @@ public class Simulation : MonoBehaviour
             float angle = i * Mathf.PI * 2 / numberOfBoids;
             float x = Mathf.Cos(angle) * startRadius;
             float z = Mathf.Sin(angle) * startRadius;
-            Vector3 position = transform.position + new Vector3(x, 10, z);
+            Vector3 position = transform.position + new Vector3(x, 3, z);
 
             float angleDegrees = -angle * Mathf.Rad2Deg;
             Quaternion rotation = Quaternion.Euler(0, angleDegrees, 0);
